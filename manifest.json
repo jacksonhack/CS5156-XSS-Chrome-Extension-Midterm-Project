@@ -1,0 +1,14 @@
+{
+    "name": "XSS Tester",
+    "description": "Tries some simple XSS on websites",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+  }
