@@ -14,12 +14,19 @@
         "webNavigation",
         "tabCapture",
         "notifications",
-        "identity"
+        "identity",
+        "contextMenus",
+        "clipboardRead",
+        "clipboardWrite"
     ],
     "icons": {
         "16": "images/icon16.png",
         "48": "images/icon48.png",
         "128": "images/icon128.png"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": true
     },
     "browser_action": {
         "default_popup": "popup.html"
