@@ -1,7 +1,7 @@
 # CS5156-XSS-Chrome-Extension-Midterm-Project
 A Chrome extension that tries to do some (harmless) cross site scripting to see if a site's text boxes are vulnerable
 
-<h2I>nstallation Instructions:</h2>
+<h2I>Installation Instructions:</h2>
 Clone repo and follow these steps to install: https://bashvlas.com/blog/install-chrome-extension-in-developer-mode
 
 <h2>Usage Instructions:</h2>
