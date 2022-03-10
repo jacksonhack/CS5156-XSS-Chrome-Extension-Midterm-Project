@@ -12,7 +12,7 @@ var simpleJSMenuItem = {
 
 var iframeMenuItem = {
     "id": "injectIFrame",
-    "title": "Inject IFrame HTML that tries to grab URL and cookies",
+    "title": "Inject IFrame HTML that tries to grab URL and cookies onLoad",
     "contexts": ["editable"]
 };
 
