@@ -1,9 +1,17 @@
-var contextMenuItem = {
+var simplehtmlMenuItem = {
+    "id": "injectSimplehtml",
+    "title": "Inject Simple HTML Heading",
+    "contexts": ["editable"]
+};
+
+var iframeMenuItem = {
     "id": "injectIFrame",
     "title": "Inject IFrame HTML",
     "contexts": ["editable"]
 };
-chrome.contextMenus.create(contextMenuItem);
+
+chrome.contextMenus.create(simplehtmlMenuItem);
+chrome.contextMenus.create(iframeMenuItem);
 
 // on click, fill editable with the script
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
@@ -11,6 +19,9 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
     document.body.appendChild(tArea);
     if (info.menuItemId === "injectIFrame") {
         tArea.value = '<iframe onload="alert(\'I AM VULNERABLE TO CROSS SITE SCRIPTING\')" style="display:none"></iframe>';
+    }
+    else if (info.menuItemId === "injectSimplehtml") {
+        tArea.value = '<h1 style="background-color:tomato;">I AM VULNERABLE TO CROSS SITE SCRIPTING</h1>';
     }
     tArea.focus();
     tArea.select();
