@@ -1,16 +1,28 @@
-<!DOCTYPE html>
-<html>
-      <head>
-            <link rel = "stylesheet" href = "button.css">
-      </head>
-      <body>
-            <div class = "container">
-                  <button id = "button1"></button>
-                  <div id = "buttonDiv"></div>
-                  <div>
-                        <p>This is the function of Button 1</p>
-                  </div>
-            </div>
-            <script src = "popup.js"></script>
-      </body>
-</html>
+<div class="container">
+      <h1><span style="color: #333399;">Welcome to XSS Tester!</span></h1>
+      <div>
+      <h2>This is a tool to test for XSS vulnerabilities on websites, mainly in text boxes.</h2>
+      <div>
+      <div>This tool can be used by right-clicking in a text box on a potentially vulnerable website and selecting from the list of possible payloads:</div>
+      <div>&nbsp;</div>
+      <h3>Simple HTML Injection:</h3>
+      <div>
+      <div>Simple HTML header injection with a red background.</div>
+      <div>If this is displayed on the webpage, it indicates vulnerability to further HTML injection.</div>
+      </div>
+      <h3>Simple Javascript Injection:</h3>
+      <div>
+      <div>Simple JavaScript alert injection.</div>
+      <div>If an alert is displayed, it indicates vulnerability to further and more malicious JavaScript injection.</div>
+      </div>
+      <h3>iFrame Onload Injection:</h3>
+      <div>
+      <div>HTML iFrame (invisible) with onload event JS that generates an alert.</div>
+      <div>This alert tries to grab the website's URL and cookies.</div>
+      <div>If this is successful, it indicates vulnerability to hidden JS in injected HTML elements.</div>
+      <div>It would also indicate that the website's information could be compromised (ex. a session cookie is stolen to login without a password)</div>
+      </div>
+      </div>
+      </div>
+</div>
+
